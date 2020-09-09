@@ -315,8 +315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 0}
-  speed: 1
-  leftAndRightEdge: 10
+  speed: 10
+  leftAndRightEdge: 20
   chanceToChangeDirections: 0.1
   secondsBetweenAppleDrops: 1
 --- !u!1001 &599389491925492831
@@ -334,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 599389492569333422, guid: 9437c263a89a9b547879c7cd5b80eb70,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 599389492569333422, guid: 9437c263a89a9b547879c7cd5b80eb70,
         type: 3}
@@ -386,5 +386,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4109294046535424855, guid: 9437c263a89a9b547879c7cd5b80eb70, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9437c263a89a9b547879c7cd5b80eb70, type: 3}

@@ -30,6 +30,13 @@ public class ApplePicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Gets current position and stores position in pos
+        Vector3 pos = transform.position;
+
+        //Time.delta time is the measure of the number of seconds since last frame
+        pos.x += speed * Time.deltaTime;
+
+        // assigns modified pos back to transform. Which moves the AppleTree
+        transform.position = pos;
     }
 }
