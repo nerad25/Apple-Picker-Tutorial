@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AppleTree : MonoBehaviour
+public class ApplePicker : MonoBehaviour
 {
-    //[Header("Set in Inspector")]
+    [Header("Set in Inspector")]
 
     // Prefab for instantiating apples
     public GameObject applePrefab;
