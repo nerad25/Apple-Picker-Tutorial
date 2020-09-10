@@ -30,6 +30,8 @@ public class ApplePicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+                //Basic movement
+
         // Gets current position and stores position in pos
         Vector3 pos = transform.position;
 
@@ -38,5 +40,24 @@ public class ApplePicker : MonoBehaviour
 
         // assigns modified pos back to transform. Which moves the AppleTree
         transform.position = pos;
+
+        //Changing direction
+
+        if (pos.x < -leftAndRightEdge)
+        {
+            speed = Mathf.Abs(speed);                              // Move right
+        }
+        else if (pos.x > leftAndRightEdge)
+        {
+            speed = -Mathf.Abs(speed);                           // Move left
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (Random.value < chanceToChangeDirections)     //Random returns a value between 0 and 1, if its less than chance...then change directions (speed set to neg val)
+        {
+            speed *= -1;
+        }
     }
 }
