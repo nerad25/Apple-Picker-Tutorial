@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ApplePicker : MonoBehaviour
+public class AppleTree : MonoBehaviour
 {
     [Header("Set in Inspector")]
 
@@ -24,13 +24,21 @@ public class ApplePicker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Dropping apples every second
+        Invoke("DropApple", 2f);
+    }
+
+    void DropApple()
+    {
+        GameObject apple = Instantiate<GameObject>(applePrefab);
+        apple.transform.position = transform.position;
+        Invoke( "DropApple", secondsBetweenAppleDrops );
     }
 
     // Update is called once per frame
     void Update()
     {
-                //Basic movement
+        //Basic movement
 
         // Gets current position and stores position in pos
         Vector3 pos = transform.position;

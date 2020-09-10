@@ -296,36 +296,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &838176473 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 599389492569333423, guid: 9437c263a89a9b547879c7cd5b80eb70,
-    type: 3}
-  m_PrefabInstance: {fileID: 599389491925492831}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &838176474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838176473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5648ef5ca9c4b214783eb9b4e52d69c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
-  speed: 10
-  leftAndRightEdge: 25
-  chanceToChangeDirections: 0.01
-  secondsBetweenAppleDrops: 1
---- !u!1001 &599389491925492831
+--- !u!1001 &1699781767
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 599389492569333421, guid: 9437c263a89a9b547879c7cd5b80eb70,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 599389492569333422, guid: 9437c263a89a9b547879c7cd5b80eb70,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,6 +368,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4109294046535424855, guid: 9437c263a89a9b547879c7cd5b80eb70, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9437c263a89a9b547879c7cd5b80eb70, type: 3}
