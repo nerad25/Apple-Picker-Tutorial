@@ -41,11 +41,12 @@ public class Basket : MonoBehaviour
 
 
             int score = int.Parse( scoreGT.text );
+            //int round = int.Parse( roundGT.text );
 
             score += 100;
+            //round -= 1;
 
             scoreGT.text = score.ToString();
-
 
             if (score > HighScore.score)
             {
