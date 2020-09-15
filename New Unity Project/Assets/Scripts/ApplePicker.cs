@@ -14,16 +14,16 @@ public class ApplePicker : MonoBehaviour
     public List<GameObject> basketList;
     public Text roundGT;
     public string roundTxt = "Round ";
-    public int round = 0;
+    public int round = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        round = 1;
         GameObject roundGO = GameObject.Find("RoundCounter");
         roundGT = roundGO.GetComponent<Text>();
-        roundGT.text = roundTxt + numBaskets.ToString();
-
+        roundGT.text = roundTxt + round.ToString();
+        Debug.Log(round);
         basketList = new List<GameObject>();
 
         for (int i = 0; i < numBaskets; i++)
@@ -47,7 +47,7 @@ public class ApplePicker : MonoBehaviour
 
 
         int basketIndex = basketList.Count - 1;
-        round = basketIndex;
+        round += 1;
         GameObject tBasketGO = basketList[basketIndex];
         basketList.RemoveAt( basketIndex );
         Destroy( tBasketGO );
