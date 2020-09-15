@@ -480,13 +480,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basketPrefab: {fileID: 8703461398853905229, guid: d1fb8ced4cdd9d84b90a9bd26dc1df07,
     type: 3}
-  numBaskets: 4
+  numBaskets: 1
   basketBottomY: -14
   basketSpacingY: 2
   basketList: []
   roundGT: {fileID: 0}
+  gameOverGT: {fileID: 0}
   roundTxt: 'Round '
   round: 0
+  gameOver: 0
 --- !u!1 &817995100
 GameObject:
   m_ObjectHideFlags: 0

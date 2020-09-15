@@ -13,17 +13,20 @@ public class ApplePicker : MonoBehaviour
     public float basketSpacingY = 2f;
     public List<GameObject> basketList;
     public Text roundGT;
+    public Text gameOverGT;
     public string roundTxt = "Round ";
     public int round = 1;
+    public bool gameOver = false;
 
     // Start is called before the first frame update
     void Start()
     {
         round = 1;
         GameObject roundGO = GameObject.Find("RoundCounter");
+
         roundGT = roundGO.GetComponent<Text>();
         roundGT.text = roundTxt + round.ToString();
-        Debug.Log(round);
+
         basketList = new List<GameObject>();
 
         for (int i = 0; i < numBaskets; i++)
@@ -47,7 +50,12 @@ public class ApplePicker : MonoBehaviour
 
 
         int basketIndex = basketList.Count - 1;
-        round += 1;
+
+        if (basketIndex >= 1)
+        {
+            round += 1;
+        }
+        
         GameObject tBasketGO = basketList[basketIndex];
         basketList.RemoveAt( basketIndex );
         Destroy( tBasketGO );
@@ -56,13 +64,13 @@ public class ApplePicker : MonoBehaviour
 
         if ( basketList.Count == 0 )
         {
-            SceneManager.LoadScene( "_Scene_0" );
+            gameOver = true;
+            SceneManager.LoadScene("GameOver");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
