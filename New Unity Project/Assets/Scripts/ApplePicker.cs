@@ -50,6 +50,7 @@ public class ApplePicker : MonoBehaviour
             Destroy( tGO );
         }
 
+<<<<<<< HEAD
 
 =======
         foreach (GameObject bGO in bAppleArray)
@@ -63,6 +64,7 @@ public class ApplePicker : MonoBehaviour
         }
 
         
+>>>>>>> parent of 45cb953... it won't let me revert till i commit
         int basketIndex = basketList.Count - 1;
 
         if (basketIndex >= 1)
