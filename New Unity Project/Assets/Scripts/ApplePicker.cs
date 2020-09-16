@@ -51,6 +51,7 @@ public class ApplePicker : MonoBehaviour
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         foreach (GameObject bGO in bAppleArray)
@@ -65,6 +66,9 @@ public class ApplePicker : MonoBehaviour
 
         
 >>>>>>> parent of 45cb953... it won't let me revert till i commit
+=======
+
+>>>>>>> parent of 0f4b479... Completed bad apple score
         int basketIndex = basketList.Count - 1;
 
         if (basketIndex >= 1)

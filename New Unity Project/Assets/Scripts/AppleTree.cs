@@ -20,11 +20,15 @@ public class AppleTree : MonoBehaviour
     // Chance that the AppleTree will change directrions
     public float chanceToChangeDirections = 0.1f;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public float chanceToDropBadApple = 1.0f;
 =======
     public float chanceToDropBadApple = 0.3f;
     public float chanceToDropGoldenApple = 0.05f;
 >>>>>>> parent of 45cb953... it won't let me revert till i commit
+=======
+    public float chanceToDropBadApple = 1.0f;
+>>>>>>> parent of 0f4b479... Completed bad apple score
 
     // Rate at which Apples will be instaitiated
     public float secondsBetweenAppleDrops = 1f;
@@ -39,6 +43,9 @@ public class AppleTree : MonoBehaviour
     void DropApple()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0f4b479... Completed bad apple score
         //GameObject apple = Instantiate<GameObject>(applePrefab);
         //apple.transform.position = transform.position;
         //Invoke( "DropApple", secondsBetweenAppleDrops );
