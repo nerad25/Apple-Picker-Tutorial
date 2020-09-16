@@ -48,7 +48,7 @@ public class ApplePicker : MonoBehaviour
             Destroy( tGO );
         }
 
-
+        
         int basketIndex = basketList.Count - 1;
 
         if (basketIndex >= 1)
