@@ -75,5 +75,24 @@ public class Basket : MonoBehaviour
 
             scoreGT.text = score.ToString();
         }
+
+        if (collidedWith.tag == "GoldenApple")
+        {
+            Destroy(collidedWith);
+
+            int score = int.Parse(scoreGT.text);
+
+            if (score == HighScore.score)
+            {
+                score += 1000;
+                HighScore.score = score;
+            }
+            else
+            {
+                score += 1000;
+            }
+
+            scoreGT.text = score.ToString();
+        }
     }
 }

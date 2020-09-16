@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BadApple
+  m_Name: GoldenApple
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -73,8 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6792453, g: 0.51585776, b: 0.06728373, a: 1}
-=======
-    - _Color: {r: 0.1981132, g: 0.09399562, b: 0.05980776, a: 1}
->>>>>>> parent of 45cb953... it won't let me revert till i commit
+    - _Color: {r: 1, g: 0.83404094, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
