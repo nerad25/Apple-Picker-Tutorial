@@ -18,12 +18,11 @@ public class AppleTree : MonoBehaviour
 
     // Chance that the AppleTree will change directrions
     public float chanceToChangeDirections = 0.1f;
-    public float chanceToDropBadApple = 0.3f;
+    public float chanceToDropBadApple = 1.0f;
 
     // Rate at which Apples will be instaitiated
     public float secondsBetweenAppleDrops = 1f;
 
-    public float rv;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +32,10 @@ public class AppleTree : MonoBehaviour
 
     void DropApple()
     {
+        //GameObject apple = Instantiate<GameObject>(applePrefab);
+        //apple.transform.position = transform.position;
+        //Invoke( "DropApple", secondsBetweenAppleDrops );
+
         if (Random.value < chanceToDropBadApple)
         {
             GameObject badApple = Instantiate<GameObject>(badApplePrefab);

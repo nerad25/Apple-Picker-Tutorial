@@ -22,28 +22,7 @@ public class Apple : MonoBehaviour
 
             ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
 
-            Debug.Log("Apple Tag is: " + this.gameObject.tag);
-
-            if (this.gameObject.tag == "Apple")
-            {
-                apScript.AppleDestroyed();
-            }
-
-            //GameObject Apple = GameObject.FindGameObjectWithTag("Apple");
-            //GameObject badApple = GameObject.FindGameObjectWithTag("BadApple");
-
-           // Debug.Log("Apple Tag is: " + Apple.gameObject.tag);
-            //Debug.Log("BadApple Tag is: " + badApple.gameObject.tag);
-
-            //if (Apple.gameObject.tag == "Apple")
-            //{
-                //apScript.AppleDestroyed();
-               // Debug.Log("Destroying apple");
-            //}
-            //else {
-             //   Debug.Log("Not destroying apple");
-            //}
-            //apScript.AppleDestroyed();
+            apScript.AppleDestroyed();
         }
     }
 }

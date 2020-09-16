@@ -44,6 +44,9 @@ public class Basket : MonoBehaviour
 
             score += 100;
 
+
+            Debug.Log(score);
+
             scoreGT.text = score.ToString();
 
             if (score > HighScore.score)
@@ -68,6 +71,7 @@ public class Basket : MonoBehaviour
             else {
                 score -= 1000;
             }
+
 
             scoreGT.text = score.ToString();
         }
