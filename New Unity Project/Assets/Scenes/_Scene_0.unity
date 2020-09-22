@@ -418,8 +418,8 @@ Camera:
   m_GameObject: {fileID: 798246889}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.21622464, g: 0.4056604, b: 0.21622464, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basketPrefab: {fileID: 8703461398853905229, guid: d1fb8ced4cdd9d84b90a9bd26dc1df07,
     type: 3}
-  numBaskets: 1
+  numBaskets: 4
   basketBottomY: -14
   basketSpacingY: 2
   basketList: []
@@ -812,5 +812,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6546352545657030749, guid: efb198e7f5959f04a83799e5b4bd2aa8,
         type: 3}
+    - target: {fileID: 8892145790650699078, guid: 9437c263a89a9b547879c7cd5b80eb70,
+        type: 3}
+      propertyPath: chanceToDropBadApple
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892145790650699078, guid: 9437c263a89a9b547879c7cd5b80eb70,
+        type: 3}
+      propertyPath: secondsBetweenAppleDrops
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9437c263a89a9b547879c7cd5b80eb70, type: 3}

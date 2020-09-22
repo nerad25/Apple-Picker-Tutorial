@@ -42,37 +42,13 @@ public class ApplePicker : MonoBehaviour
     public void AppleDestroyed()
     {
         GameObject[] tAppleArray = GameObject.FindGameObjectsWithTag("Apple");
-        GameObject[] bAppleArray = GameObject.FindGameObjectsWithTag("BadApple");
-        GameObject[] gAppleArray = GameObject.FindGameObjectsWithTag("GoldenApple");
 
         foreach ( GameObject tGO in tAppleArray )
         {
             Destroy( tGO );
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        foreach (GameObject bGO in bAppleArray)
-        {
-            Destroy(bGO);
-        }
-
-        foreach (GameObject gGO in gAppleArray)
-        {
-            Destroy(gGO);
-        }
-
         
->>>>>>> parent of 45cb953... it won't let me revert till i commit
-=======
-
->>>>>>> parent of 0f4b479... Completed bad apple score
-=======
-
->>>>>>> parent of 0f4b479... Completed bad apple score
         int basketIndex = basketList.Count - 1;
 
         if (basketIndex >= 1)

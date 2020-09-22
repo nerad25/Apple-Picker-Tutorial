@@ -9,7 +9,6 @@ public class AppleTree : MonoBehaviour
     // Prefab for instantiating apples
     public GameObject applePrefab;
     public GameObject badApplePrefab;
-    public GameObject goldenApplePrefab;
 
     // Speed at which apple tree moves
     public float speed = 1f;
@@ -19,24 +18,12 @@ public class AppleTree : MonoBehaviour
 
     // Chance that the AppleTree will change directrions
     public float chanceToChangeDirections = 0.1f;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public float chanceToDropBadApple = 1.0f;
-=======
     public float chanceToDropBadApple = 0.3f;
-    public float chanceToDropGoldenApple = 0.05f;
->>>>>>> parent of 45cb953... it won't let me revert till i commit
-=======
-    public float chanceToDropBadApple = 1.0f;
->>>>>>> parent of 0f4b479... Completed bad apple score
-=======
-    public float chanceToDropBadApple = 1.0f;
->>>>>>> parent of 0f4b479... Completed bad apple score
 
     // Rate at which Apples will be instaitiated
     public float secondsBetweenAppleDrops = 1f;
 
+    public float rv;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,27 +33,7 @@ public class AppleTree : MonoBehaviour
 
     void DropApple()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 0f4b479... Completed bad apple score
-=======
->>>>>>> parent of 0f4b479... Completed bad apple score
-        //GameObject apple = Instantiate<GameObject>(applePrefab);
-        //apple.transform.position = transform.position;
-        //Invoke( "DropApple", secondsBetweenAppleDrops );
-
         if (Random.value < chanceToDropBadApple)
-=======
-        if (Random.value < chanceToDropGoldenApple)
-        {
-            GameObject goldenApple = Instantiate<GameObject>(goldenApplePrefab);
-            goldenApple.transform.position = transform.position;
-            Invoke("DropApple", secondsBetweenAppleDrops);
-        }
-        else if (Random.value < chanceToDropBadApple)
->>>>>>> parent of 45cb953... it won't let me revert till i commit
         {
             GameObject badApple = Instantiate<GameObject>(badApplePrefab);
             badApple.transform.position = transform.position;

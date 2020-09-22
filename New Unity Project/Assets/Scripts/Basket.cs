@@ -44,9 +44,6 @@ public class Basket : MonoBehaviour
 
             score += 100;
 
-
-            Debug.Log(score);
-
             scoreGT.text = score.ToString();
 
             if (score > HighScore.score)
@@ -72,32 +69,6 @@ public class Basket : MonoBehaviour
                 score -= 1000;
             }
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-            scoreGT.text = score.ToString();
-        }
-
-        if (collidedWith.tag == "GoldenApple")
-        {
-            Destroy(collidedWith);
-
-            int score = int.Parse(scoreGT.text);
-
-            if (score == HighScore.score)
-            {
-                score += 1000;
-                HighScore.score = score;
-            }
-            else
-            {
-                score += 1000;
-            }
-
-=======
->>>>>>> parent of 0f4b479... Completed bad apple score
-=======
->>>>>>> parent of 0f4b479... Completed bad apple score
             scoreGT.text = score.ToString();
         }
     }
