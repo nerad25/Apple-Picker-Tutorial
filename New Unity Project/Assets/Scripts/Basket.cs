@@ -74,6 +74,7 @@ public class Basket : MonoBehaviour
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             scoreGT.text = score.ToString();
         }
 
@@ -93,6 +94,8 @@ public class Basket : MonoBehaviour
                 score += 1000;
             }
 
+=======
+>>>>>>> parent of 0f4b479... Completed bad apple score
 =======
 >>>>>>> parent of 0f4b479... Completed bad apple score
             scoreGT.text = score.ToString();

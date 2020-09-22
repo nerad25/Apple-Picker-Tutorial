@@ -21,11 +21,15 @@ public class AppleTree : MonoBehaviour
     public float chanceToChangeDirections = 0.1f;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public float chanceToDropBadApple = 1.0f;
 =======
     public float chanceToDropBadApple = 0.3f;
     public float chanceToDropGoldenApple = 0.05f;
 >>>>>>> parent of 45cb953... it won't let me revert till i commit
+=======
+    public float chanceToDropBadApple = 1.0f;
+>>>>>>> parent of 0f4b479... Completed bad apple score
 =======
     public float chanceToDropBadApple = 1.0f;
 >>>>>>> parent of 0f4b479... Completed bad apple score
@@ -44,6 +48,9 @@ public class AppleTree : MonoBehaviour
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0f4b479... Completed bad apple score
 =======
 >>>>>>> parent of 0f4b479... Completed bad apple score
         //GameObject apple = Instantiate<GameObject>(applePrefab);
